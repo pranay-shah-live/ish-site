@@ -2,81 +2,77 @@
 module.exports = {
     darkMode: ["class"],
     content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-    "./public/index.html"
-  ],
-  theme: {
-  	extend: {
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		},
-  		colors: {
-  			background: 'hsl(var(--background))',
-  			foreground: 'hsl(var(--foreground))',
-  			card: {
-  				DEFAULT: 'hsl(var(--card))',
-  				foreground: 'hsl(var(--card-foreground))'
-  			},
-  			popover: {
-  				DEFAULT: 'hsl(var(--popover))',
-  				foreground: 'hsl(var(--popover-foreground))'
-  			},
-  			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
-  			},
-  			secondary: {
-  				DEFAULT: 'hsl(var(--secondary))',
-  				foreground: 'hsl(var(--secondary-foreground))'
-  			},
-  			muted: {
-  				DEFAULT: 'hsl(var(--muted))',
-  				foreground: 'hsl(var(--muted-foreground))'
-  			},
-  			accent: {
-  				DEFAULT: 'hsl(var(--accent))',
-  				foreground: 'hsl(var(--accent-foreground))'
-  			},
-  			destructive: {
-  				DEFAULT: 'hsl(var(--destructive))',
-  				foreground: 'hsl(var(--destructive-foreground))'
-  			},
-  			border: 'hsl(var(--border))',
-  			input: 'hsl(var(--input))',
-  			ring: 'hsl(var(--ring))',
-  			chart: {
-  				'1': 'hsl(var(--chart-1))',
-  				'2': 'hsl(var(--chart-2))',
-  				'3': 'hsl(var(--chart-3))',
-  				'4': 'hsl(var(--chart-4))',
-  				'5': 'hsl(var(--chart-5))'
-  			}
-  		},
-  		keyframes: {
-  			'accordion-down': {
-  				from: {
-  					height: '0'
-  				},
-  				to: {
-  					height: 'var(--radix-accordion-content-height)'
-  				}
-  			},
-  			'accordion-up': {
-  				from: {
-  					height: 'var(--radix-accordion-content-height)'
-  				},
-  				to: {
-  					height: '0'
-  				}
-  			}
-  		},
-  		animation: {
-  			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
-  		}
-  	}
-  },
-  plugins: [require("tailwindcss-animate")],
+        "./src/**/*.{js,jsx,ts,tsx}",
+        "./public/index.html"
+    ],
+    theme: {
+        extend: {
+            fontFamily: {
+                heading: ['Oswald', 'sans-serif'],
+                body: ['Lexend', 'sans-serif'],
+            },
+            colors: {
+                primary: {
+                    DEFAULT: '#1A56DB',
+                    foreground: '#FFFFFF',
+                },
+                secondary: {
+                    DEFAULT: '#FF6B00',
+                    foreground: '#000000',
+                },
+                accent: {
+                    DEFAULT: '#FDE047',
+                    foreground: '#000000',
+                },
+                background: '#FFFFFF',
+                foreground: '#111827',
+                muted: {
+                    DEFAULT: '#F3F4F6',
+                    foreground: '#4B5563',
+                },
+                border: '#000000',
+                card: {
+                    DEFAULT: '#FFFFFF',
+                    foreground: '#000000',
+                },
+                input: '#E5E7EB',
+                ring: '#000000',
+            },
+            borderRadius: {
+                lg: 'var(--radius)',
+                md: 'calc(var(--radius) - 2px)',
+                sm: 'calc(var(--radius) - 4px)',
+            },
+            keyframes: {
+                'marquee': {
+                    '0%': { transform: 'translateX(0)' },
+                    '100%': { transform: 'translateX(-50%)' },
+                },
+                'fade-in-up': {
+                    '0%': { opacity: '0', transform: 'translateY(24px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' },
+                },
+                'fade-in-left': {
+                    '0%': { opacity: '0', transform: 'translateX(-24px)' },
+                    '100%': { opacity: '1', transform: 'translateX(0)' },
+                },
+                'fade-in-right': {
+                    '0%': { opacity: '0', transform: 'translateX(24px)' },
+                    '100%': { opacity: '1', transform: 'translateX(0)' },
+                },
+                'scale-in': {
+                    '0%': { opacity: '0', transform: 'scale(0.95)' },
+                    '100%': { opacity: '1', transform: 'scale(1)' },
+                },
+            },
+            animation: {
+                'marquee': 'marquee 30s linear infinite',
+                'fade-in-up': 'fade-in-up 0.6s ease-out forwards',
+                'fade-in-left': 'fade-in-left 0.6s ease-out forwards',
+                'fade-in-right': 'fade-in-right 0.6s ease-out forwards',
+                'scale-in': 'scale-in 0.5s ease-out forwards',
+            },
+        },
+    },
+    plugins: [require("tailwindcss-animate")],
 };
