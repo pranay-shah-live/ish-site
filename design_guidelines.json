@@ -1,0 +1,150 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "India Signing Hands (ISH) - Redesign",
+      "style": "Accessible Neo-Brutalism",
+      "vibe": "Bold, Inclusive, Energetic, Unapologetic",
+      "core_principles": [
+        "Accessibility First (WCAG 2.1 AA+)",
+        "High Contrast & Clarity",
+        "Motion with Purpose (Respect Reduced Motion)",
+        "Gen Z Aesthetic (Raw, Authentic, Bold)"
+      ]
+    },
+    "typography": {
+      "font_family": {
+        "heading": "Oswald, sans-serif",
+        "body": "Lexend, sans-serif"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-bold uppercase tracking-tight",
+        "h2": "text-4xl md:text-5xl font-bold uppercase",
+        "h3": "text-2xl md:text-3xl font-semibold",
+        "body": "text-lg md:text-xl leading-relaxed",
+        "caption": "text-sm font-medium uppercase tracking-widest"
+      },
+      "weights": {
+        "regular": 400,
+        "medium": 500,
+        "bold": 700
+      },
+      "import_url": "https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Oswald:wght@400;500;700&display=swap"
+    },
+    "colors": {
+      "palette": {
+        "primary": "#1A56DB",
+        "primary_foreground": "#FFFFFF",
+        "secondary": "#FF6B00",
+        "secondary_foreground": "#000000",
+        "accent": "#FDE047",
+        "accent_foreground": "#000000",
+        "background": "#FFFFFF",
+        "foreground": "#111827",
+        "muted": "#F3F4F6",
+        "muted_foreground": "#4B5563",
+        "border": "#000000",
+        "card": "#FFFFFF",
+        "card_foreground": "#000000",
+        "input": "#E5E7EB",
+        "ring": "#000000"
+      },
+      "usage": {
+        "primary_action": "bg-primary text-primary-foreground hover:bg-blue-800",
+        "secondary_action": "bg-secondary text-secondary-foreground hover:bg-orange-600",
+        "high_contrast_border": "border-2 border-black",
+        "focus_ring": "ring-4 ring-yellow-400 ring-offset-2"
+      }
+    },
+    "spacing": {
+      "container": "container mx-auto px-4 md:px-6 lg:px-8",
+      "section_padding": "py-16 md:py-24 lg:py-32",
+      "element_gap": "gap-6 md:gap-8 lg:gap-12"
+    },
+    "visual_enhancers": {
+      "shadows": {
+        "brutalist": "shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-0.5 transition-all",
+        "brutalist_sm": "shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
+      },
+      "borders": {
+        "thick": "border-2 border-black",
+        "default": "border border-black"
+      },
+      "radius": {
+        "default": "rounded-sm",
+        "pill": "rounded-full",
+        "none": "rounded-none"
+      }
+    }
+  },
+  "layout_strategies": {
+    "grid_system": {
+      "bento_grid": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[minmax(300px,auto)]",
+      "logo_wall": "flex gap-12 overflow-hidden py-10",
+      "team_grid": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+    },
+    "accessibility": {
+      "focus_visible": "focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-yellow-400 focus-visible:ring-offset-2",
+      "skip_link": "fixed top-4 left-4 z-50 -translate-y-[150%] focus:translate-y-0 bg-black text-white px-6 py-3 font-bold transition-transform",
+      "reduced_motion": "motion-reduce:transition-none motion-reduce:animate-none"
+    }
+  },
+  "components": {
+    "accessibility_widget": {
+      "position": "fixed bottom-6 left-6 z-50",
+      "trigger": "w-14 h-14 bg-black text-white rounded-full flex items-center justify-center shadow-brutalist hover:scale-110 transition-transform",
+      "panel": "absolute bottom-16 left-0 w-72 bg-white border-2 border-black shadow-brutalist p-6 space-y-4 rounded-sm"
+    },
+    "buttons": {
+      "primary": "inline-flex items-center justify-center whitespace-nowrap text-lg font-bold uppercase tracking-wide bg-primary text-white border-2 border-black shadow-brutalist hover:translate-y-[2px] hover:shadow-none transition-all px-8 py-4",
+      "secondary": "inline-flex items-center justify-center whitespace-nowrap text-lg font-bold uppercase tracking-wide bg-white text-black border-2 border-black shadow-brutalist hover:bg-gray-100 transition-all px-8 py-4"
+    },
+    "cards": {
+      "service_card": "group relative overflow-hidden bg-white border-2 border-black shadow-brutalist hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all p-8 flex flex-col justify-between h-full",
+      "team_card": "bg-white border-2 border-black p-4 text-center space-y-3"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1659356581485-152348208da5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwyfHxJbmRpYW4lMjBTaWduJTIwTGFuZ3VhZ2UlMjBpbnRlcnByZXRlciUyMG5ld3MlMjBjcmlja2V0fGVufDB8fHx8MTc3MTE4MTQxMXww&ixlib=rb-4.1.0&q=85",
+      "services": {
+        "interpretation": "https://images.unsplash.com/photo-1609785193644-30272d4617fe?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjBTaWduJTIwTGFuZ3VhZ2UlMjBpbnRlcnByZXRlciUyMG5ld3MlMjBjcmlja2V0fGVufDB8fHx8MTc3MTE4MTQxMXww&ixlib=rb-4.1.0&q=85",
+        "sports": "https://images.unsplash.com/photo-1750716413341-fd5d93296a76?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwyfHxjcmlja2V0JTIwc3RhZGl1bSUyMGNyb3dkJTIwY2hlZXJpbmd8ZW58MHx8fHwxNzcxMTgxNDI0fDA&ixlib=rb-4.1.0&q=85",
+        "corporate": "https://images.unsplash.com/photo-1758518731468-98e90ffd7430?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwY29ycG9yYXRlJTIwdGVhbSUyMG1lZXRpbmclMjBzbWlsaW5nJTIwb2ZmaWNlfGVufDB8fHx8MTc3MTE4MTQyM3ww&ixlib=rb-4.1.0&q=85",
+        "media": "https://images.unsplash.com/photo-1653379671605-0235d2ed6a82?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwzfHxJbmRpYW4lMjBTaWduJTIwTGFuZ3VhZ2UlMjBpbnRlcnByZXRlciUyMG5ld3MlMjBjcmlja2V0fGVufDB8fHx8MTc3MTE4MTQxMXww&ixlib=rb-4.1.0&q=85"
+      },
+      "team": [
+        "https://images.unsplash.com/photo-1758518731468-98e90ffd7430?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwY29ycG9yYXRlJTIwdGVhbSUyMG1lZXRpbmclMjBzbWlsaW5nJTIwb2ZmaWNlfGVufDB8fHx8MTc3MTE4MTQyM3ww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1666113604293-d34734339acb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwyfHxkaXZlcnNlJTIwY29ycG9yYXRlJTIwdGVhbSUyMG1lZXRpbmclMjBzbWlsaW5nJTIwb2ZmaWNlfGVufDB8fHx8MTc3MTE4MTQyM3ww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1757405934467-21fc25c60660?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHw0fHxkaXZlcnNlJTIwY29ycG9yYXRlJTIwdGVhbSUyMG1lZXRpbmclMjBzbWlsaW5nJTIwb2ZmaWNlfGVufDB8fHx8MTc3MTE4MTQyM3ww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1624555130296-e551faf8969b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwzfHxkaXZlcnNlJTIwY29ycG9yYXRlJTIwdGVhbSUyMG1lZXRpbmclMjBzbWlsaW5nJTIwb2ZmaWNlfGVufDB8fHx8MTc3MTE4MTQyM3ww&ixlib=rb-4.1.0&q=85"
+      ],
+      "logo_placeholders": [
+        "https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Cricket_India_Crest.svg/1200px-Cricket_India_Crest.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e4/Star_Sports_logo.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Amazon_Prime_Video_logo.svg/2560px-Amazon_Prime_Video_logo.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Reliance_Foundation_logo.svg/1200px-Reliance_Foundation_logo.svg.png"
+      ]
+    },
+    "icons": {
+      "library": "lucide-react",
+      "styles": "stroke-[2.5px] w-6 h-6"
+    }
+  },
+  "instructions_to_main_agent": [
+    "INSTALL FONTS: Add the Google Fonts import to your index.css immediately.",
+    "THEME: Force Light Mode by default. Do not use dark mode classes unless toggled via the accessibility widget.",
+    "ACCESSIBILITY WIDGET: Create this as a global component 'AccessibilityPanel' that lives in the main layout. It should use local storage to persist preferences.",
+    "MOTION: Use framer-motion for simple staggered reveals on scroll, but WRAP them in a 'ReducedMotion' check. If user prefers reduced motion, disable all transforms.",
+    "FORMS: Use Shadcn Form components but override styles to match the 'Brutalist' input style (thick border, no radius).",
+    "CONTRAST: Always verify text contrast. Use Black text on White/Grey backgrounds. Use White text ONLY on deep Primary Blue or Black backgrounds.",
+    "SKIP LINK: Implement a 'Skip to Main Content' link as the very first focusable element in the app.",
+    "IMAGES: Use 'object-cover' for all images to ensure they fill their brutalist containers without distortion.",
+    "TESTING: Add 'data-testid' to every interactive element (buttons, links, inputs)."
+  ],
+  "universal_guidelines": [
+    "Avoid generic centered layouts. Use asymmetry where possible.",
+    "Use 2-3x more spacing than typical designs (p-8, p-12).",
+    "Never use pure black (#000000) for text paragraphs, use #111827. Use pure black only for borders/headings.",
+    "Do not use gradients. Stick to flat, bold colors."
+  ]
+}
