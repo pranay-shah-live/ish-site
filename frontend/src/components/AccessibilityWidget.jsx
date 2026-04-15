@@ -174,16 +174,20 @@ export default function AccessibilityWidget() {
         >
           <div className="flex items-center justify-between px-4 py-3 bg-foreground text-white">
             <h2 className="font-heading text-base uppercase tracking-wide">Accessibility</h2>
-            {isModified && (
-              <button
-                onClick={resetAll}
-                className="flex items-center gap-1 font-body text-xs text-gray-300 hover:text-white transition-colors"
-                data-testid="a11y-reset-button"
-              >
-                <RotateCcw size={12} />
-                Reset
-              </button>
-            )}
+            <button
+              onClick={resetAll}
+              className={`flex items-center gap-1.5 font-heading text-xs uppercase tracking-wider px-2 py-1 transition-colors ${
+                isModified
+                  ? 'text-accent hover:text-white border border-accent'
+                  : 'text-gray-600 cursor-default opacity-0 pointer-events-none'
+              }`}
+              data-testid="a11y-reset-button"
+              aria-label="Reset all accessibility settings"
+              disabled={!isModified}
+            >
+              <RotateCcw size={12} />
+              Reset
+            </button>
           </div>
 
           <div className="p-4 space-y-4">
